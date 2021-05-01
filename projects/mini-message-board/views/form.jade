@@ -1,0 +1,17 @@
+extends layout
+
+block content
+    h1 Write your message
+    form(method="post", action="/new")
+        div.input
+            span.label Author
+            br
+            input(type="text", name="author", required)
+        br
+        div.input
+            span.label Message
+            br
+            input(type="text", name="message", required)
+        br
+        div.actions
+            input(type="submit", value="Submit")
